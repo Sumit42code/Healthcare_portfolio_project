@@ -1,0 +1,10 @@
+﻿facility_id,facility_name,hospital_region,city,facility_type,bed_capacity
+F001,Kowhai Central Hospital,Northern,Auckland,Tertiary Hospital,480
+F002,Waitemata Community Hospital, northern ,Henderson,Community Hospital,220
+F003,Rimu Regional Hospital,Midland,Hamilton,Regional Hospital,360
+F004,Lakes District Hospital,Midland,Rotorua,Regional Hospital,190
+F005,Harbour Regional Hospital,CENTRAL,Wellington,Tertiary Hospital,410
+F006,Manawatu Health Centre,Central,Palmerston North,Community Hospital,175
+F007,Pounamu Regional Hospital,Southern,Christchurch,Tertiary Hospital,430
+F008,Otago Valley Hospital,southern ,Dunedin,Regional Hospital,260
+F004,Lakes District Hospital,Midland,Rotorua,Regional Hospital,190

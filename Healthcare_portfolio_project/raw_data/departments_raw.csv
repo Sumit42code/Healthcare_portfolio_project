@@ -1,0 +1,43 @@
+﻿department_id,facility_id,department_name,specialty_group,routine_target_days,urgent_target_days,appointment_wait_target_mins
+D001,F001,Cardiology,Medical,90,21,30
+D002,F001,Orthopaedics,Surgical,120,28,30
+D003,F001,General Surgery,Surgical,100,21,30
+D004,F001,Gastroenterology,Medical,100,28,30
+D005,F001,Respiratory,Medical,90,21,30
+D006,F002, orthopaedics ,Surgical,120,28,30
+D007,F002,General Surgery,Surgical,100,21,30
+D008,F002,Gastroenterology,Medical,100,28,30
+D009,F002,Respiratory,Medical,90,21,30
+D010,F002, neurology ,Medical,120,28,30
+D011,F003,General Surgery,Surgical,100,21,30
+D012,F003,Gastroenterology,Medical,100,28,30
+D013,F003,Respiratory,Medical,90,21,30
+D014,F003,Neurology,Medical,120,28,30
+D015,F003, dermatology ,Medical,120,35,20
+D016,F004,Gastroenterology,Medical,100,28,30
+D017,F004, respiratory ,Medical,90,21,30
+D018,F004,Neurology,Medical,120,28,30
+D019,F004,Dermatology,Medical,120,35,20
+D020,F004,ENT,Surgical,100,28,25
+D021,F005,Respiratory,Medical,90,21,30
+D022,F005, neurology ,Medical,120,28,30
+D023,F005,Dermatology,Medical,120,35,20
+D024,F005,ENT,Surgical,100,28,25
+D025,F005,Cardiology,Medical,90,21,30
+D026,F006,Neurology,Medical,120,28,30
+D027,F006,Dermatology,Medical,120,35,20
+D028,F006,ENT,Surgical,100,28,25
+D029,F006,Cardiology,Medical,90,21,30
+D030,F006,Orthopaedics,Surgical,120,28,30
+D031,F007,Dermatology,Medical,120,35,20
+D032,F007,ENT,Surgical,100,28,25
+D033,F007, cardiology ,Medical,90,21,30
+D034,F007,Orthopaedics,Surgical,120,28,30
+D035,F007,General Surgery,Surgical,100,21,30
+D036,F008,ENT,Surgical,100,28,25
+D037,F008,Cardiology,Medical,90,21,30
+D038,F008, orthopaedics ,Surgical,120,28,30
+D039,F008, general surgery ,Surgical,100,21,30
+D040,F008,Gastroenterology,Medical,100,28,30
+D005,F001,Respiratory,Medical,90,21,30
+D038,F008, orthopaedics ,Surgical,120,28,30
