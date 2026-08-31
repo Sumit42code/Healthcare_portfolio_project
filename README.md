@@ -471,9 +471,10 @@ Cloud services or advanced tools should be added only when they solve a defined 
 
 ---
 
-##Insights 
+## Insights
 
-Click Here
+
+Click Here:
 ---
 
 ## Author
