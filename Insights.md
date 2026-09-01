@@ -1,9 +1,9 @@
 # Healthcare Access and Service Performance Insights
 
-## Executive Summary
+## Summary
 
 - Demand is stable, but access and flow are constrained. Referral volume increased only 0.44% and ED volume 0.34% in the comparable January–July periods, yet 89.47% of the referral backlog had been waiting more than 60 days.
-- Appointment execution is the clearest operational priority. Only 29.89% of eligible appointments met the department waiting-time target, while the network no-show rate was 12.83%. Dermatology was the weakest specialty for target performance and also had the highest specialty-level no-show rate.
+- Appointment execution is the clearest operational priority. Only 29.89% of eligible appointments met the department waiting time target, while the network no-show rate was 12.83%. Dermatology was the weakest specialty for target performance and also had the highest specialty-level no-show rate.
 - ED activity is evenly distributed, but patient-flow indicators require review. Admissions represented 20.83% of visits, 5.10% left before treatment, and 39.85% of visits with a previous recorded discharge returned within seven days.
 - Management should focus on throughput rather than demand growth alone. The strongest near-term opportunities are reducing old referral backlog, improving urgent referral access, redesigning Dermatology and ENT clinic flow, reducing avoidable no-shows, and investigating repeat ED use and left-before-treatment patterns.
 
@@ -13,11 +13,12 @@ Referral intake remained stable, but the backlog is old and target performance i
 
 ### 1. Referral volume remained stable
 
-The network recorded 32,000 referrals, averaging 1,684 per month. January–July volume increased from 11,698 in 2025 to 11,749 in 2026, a rise of only 0.44%. February was the lowest month in both years, but its daily rate was similar to longer months; the lower total is mainly consistent with fewer calendar days rather than a material fall in demand.
+There are recorded 32,000 referrals, averaging 1,684 per month. January–July volume increased from 11,698 in 2025 to 11,749 in 2026, a rise of only 0.44%. February was the lowest month in both years, but its daily rate was similar to longer months; the lower total is mainly consistent with fewer calendar days rather than a material fall in demand.
 
 Completed referrals represented 49.94% of all records, while Waiting and Open referrals together represented 25.11%. Management can use roughly 1,680 referrals per month as a planning baseline, but should track bookings and closures alongside new referrals. Stable intake combined with a rising or ageing backlog would point to a throughput constraint rather than an intake surge.
 
-![Monthly referrals by status](assets/chart-000.png)
+<img width="398" height="186" alt="Monthly referrals by status" src="https://github.com/user-attachments/assets/509e2758-ed62-4f88-8e20-7ed1f312436a" />
+
 
 ### 2. The referral backlog requires both network-wide and targeted action
 
@@ -27,11 +28,12 @@ The top 10 departments accounted for only 27.42% of the backlog, and regional sh
 
 ### 3. Backlog age is more concerning than backlog size alone
 
-As at August 1, 2026, 7,189 referrals—89.47% of the backlog—had waited more than 60 days. Only 10.53% had waited 60 days or less. The over-60-day share ranged narrowly from 88.78% in Midland to 90.27% in Southern, confirming a network-wide ageing problem.
+As at August 1, 2026, 7,189 referrals 89.47% of the backlog—had waited more than 60 days. Only 10.53% had waited 60 days or less. The over-60-day share ranged narrowly from 88.78% in Midland to 90.27% in Southern, confirming a network-wide ageing problem.
 
 The immediate priority should be a clinically risk-adjusted review of the oldest referrals, not a simple first-in-first-out clearance exercise. The network should also monitor whether new referrals entering the backlog exceed those being booked, completed, cancelled or closed.
 
-![Referral backlog by waiting-time band](assets/chart-001.png)
+<img width="386" height="190" alt="Referral backlog by waiting time" src="https://github.com/user-attachments/assets/8874627b-c8c2-4251-95cc-dfec611e8296" />
+
 
 ### 4. Only half of referrals received a first appointment within target
 
@@ -55,13 +57,15 @@ There were 6,729 no-shows among 52,438 attendance-eligible appointments, a netwo
 
 Regional rates differed by only 0.42 percentage points, and the top 10 departments contributed 27.17% of no-shows. A network-wide reminder, confirmation and easy-rescheduling programme is therefore justified, with targeted support for the highest-rate departments. A one-percentage-point reduction would represent approximately 524 additional attended appointments, assuming eligible volume remained unchanged.
 
-![Highest department no-show rates](assets/chart-002.png)
+<img width="391" height="185" alt="Highest department no show" src="https://github.com/user-attachments/assets/3b8dcdf5-315e-4af0-bd89-a90b39587c01" />
+
 
 ### 7. Waiting-time target performance is weak across every specialty
 
 Only 13,443 of 44,969 eligible appointments met target, an achievement rate of 29.89%. The weighted average wait was 44.83 minutes, but no department achieved a rate above 50%. Dermatology was the clear outlier at 15.40%, followed by ENT at 24.67%; other specialties were clustered near 32%–34%. Because average waits were similar across specialties, the gap may reflect different target thresholds as well as clinic processes. Management should validate target definitions and examine clinic start times, staffing, room availability and scheduling. Median and 90th-percentile waits should be added because an average can hide a long-waiting minority.
 
-![Appointment waiting-time target achievement by specialty](assets/chart-003.png)
+<img width="389" height="188" alt="Appointment waiting-time" src="https://github.com/user-attachments/assets/aa16aa97-9210-47c7-be0a-f4ca67d5c9dc" />
+
 
 ### 8. Booking channel explains only a small part of no-show variation
 
@@ -85,7 +89,8 @@ The network recorded 22,000 ED visits, averaging 1,158 per month. January–July
 
 The current evidence does not support a major capacity increase based on monthly volume growth alone. Staffing decisions should instead use arrivals by hour and weekday, triage severity, length of stay and admission demand. Daily rates should be used when comparing months of different lengths.
 
-![Monthly emergency department visits](assets/chart-004.png)
+<img width="409" height="191" alt="Monthly emergency department visits" src="https://github.com/user-attachments/assets/7f514b15-e86e-450e-9eb0-de64436abf27" />
+
 
 ### 11. ED length of stay is similar across facilities, but extreme cases need review
 
@@ -105,7 +110,8 @@ Injury was the largest group with 5,289 visits (24.04%). Injury, abdominal and r
 
 Capacity planning should ensure appropriate staffing, pathways and equipment for these high-volume presentations. Respiratory demand should be reviewed seasonally. Cardiac and neurological presentations have lower volume but may be more urgent, so volume should not be used as the only prioritisation measure. The Other category, at 8.05%, should be reviewed to determine whether useful subgroups are being hidden.
 
-![Emergency department visits by presenting group](assets/chart-005.png)
+<img width="392" height="189" alt="Emergency department visits by department" src="https://github.com/user-attachments/assets/f3a24edf-e0ee-4e12-94eb-56c871652f9b" />
+
 
 ### 14. Seven-day repeat ED use is high across every facility
 
@@ -113,12 +119,13 @@ Among 10,311 visits with a previous recorded discharge, 4,109 returned within se
 
 The 4.73-point facility range is smaller than the high network level, so the issue appears broad rather than isolated. Management should investigate repeat presentations by condition, triage, discharge disposition, age, deprivation and follow-up access. This measure is not an inpatient readmission rate, does not use all ED visits as its denominator, and groups each return under the current facility even when the previous visit occurred elsewhere.
 
-![Seven-day repeat ED visit rate by current facility](assets/chart-006.png)
+<img width="392" height="182" alt="seven day repeat ed visits by facility " src="https://github.com/user-attachments/assets/09a67e75-8c7e-4068-b0b6-e1f7e669b813" />
+
 
 ## Recommended Next Steps
 
-1. Within 30 days — confirm the evidence base. Reconcile the July 2026 appointment spike, the 232 appointments beyond the documented future window, unmatched facility and region records, and the definitions for waiting-time and repeat-visit measures.
-2. Within 30–60 days — protect clinically urgent access. Risk-stratify the over-60-day referral backlog, review Midland urgent referrals, and create department-level reduction targets that balance age, urgency and volume.
-3. Within 60–90 days — recover appointment capacity. Pilot reminders and confirmation for Phone and Referral Team bookings, introduce easy cancellation and short-notice refill lists, and redesign Dermatology and ENT clinic flow.
-4. Within 60–90 days — investigate ED flow and continuity. Review left-before-treatment patterns at Rimu and Waitemata, examine extreme length-of-stay cases, and identify the presenting groups and patient cohorts driving seven-day returns.
-5. Ongoing — monitor a balanced scorecard. Track demand, backlog age, target achievement, no-shows, median and 90th-percentile waits, ED length of stay, left-before-treatment and repeat visits. Pair counts with rates and denominators so high-volume services are not misclassified as poor performers.
+1. Within 30 days: confirm the evidence base. Reconcile the July 2026 appointment spike, the 232 appointments beyond the documented future window, unmatched facility and region records, and the definitions for waiting-time and repeat-visit measures.
+2. Within 30–60 days: protect clinically urgent access. Risk-stratify the over-60-day referral backlog, review Midland urgent referrals, and create department-level reduction targets that balance age, urgency and volume.
+3. Within 60–90 days: recover appointment capacity. Pilot reminders and confirmation for Phone and Referral Team bookings, introduce easy cancellation and short-notice refill lists, and redesign Dermatology and ENT clinic flow.
+4. Within 60–90 days: investigate ED flow and continuity. Review left-before-treatment patterns at Rimu and Waitemata, examine extreme length-of-stay cases, and identify the presenting groups and patient cohorts driving seven-day returns.
+5. Ongoing: monitor a balanced scorecard. Track demand, backlog age, target achievement, no-shows, median and 90th-percentile waits, ED length of stay, left-before-treatment and repeat visits. Pair counts with rates and denominators so high-volume services are not misclassified as poor performers.
