@@ -35,7 +35,7 @@
 
 ## Project overview
 
-This project analyses a fictional New Zealand healthcare network containing facilities, departments, patients, referrals, outpatient appointments and emergency-department visits.
+This project is analysing a fictional New Zealand healthcare network containing facilities, departments, patients, referrals, outpatient appointments and emergency-department visits.
 
 The Project follows a complete analytical workflow:
 
@@ -75,14 +75,15 @@ The analysis combines referral, appointment and emergency-department activity so
 
 ## Project architecture
 
-![Healthcare analytics data pipeline](Healthcare_Analytics_Pipeline.png)
+<img width="2000" height="1500" alt="Healthcare_Analytics_Pipeline" src="https://github.com/user-attachments/assets/bd809bfa-fe27-42b9-83d2-00fea9abda3e" />
+
 
 The database uses three schemas with separate responsibilities:
 
 | Schema | Purpose |
 |---|---|
 | `raw` | Preserves source values for traceability and profiling |
-| `clean` | Stores typed, standardised and quality-controlled records |
+| `clean` | Stores typed, standardized and quality-controlled records |
 | `analytics` | Provides reusable, business-friendly reporting views |
 
 This layered design prevents reporting logic from being mixed with source ingestion or cleaning rules.
@@ -148,7 +149,8 @@ The project uses synthetic data created for educational and portfolio purposes. 
 - Retained original values so every cleaning decision could be traced.
 - Reconciled source and raw-table row counts.
 
-![alt text](image.png)
+<img width="904" height="526" alt="image" src="https://github.com/user-attachments/assets/0a842ea2-7ac2-4573-9855-1887a4a1d956" />
+
 
 
 
@@ -160,7 +162,8 @@ The project uses synthetic data created for educational and portfolio purposes. 
 - Used anti-joins to identify unmatched relationship keys.
 - Reviewed event timelines before selecting cleaning treatments.
 
-![alt text](image-1.png)
+<img width="904" height="526" alt="image" src="https://github.com/user-attachments/assets/c1548e71-8ff8-4154-a2f6-8e8e64edcaf9" />
+
 
 ### 3. Clean and standardise
 
@@ -171,7 +174,8 @@ The project uses synthetic data created for educational and portfolio purposes. 
 - Preserved useful activity records where possible.
 - Added flags when a retained record was unsafe for a specific calculation.
 
-![alt text](image-2.png)
+<img width="958" height="538" alt="image" src="https://github.com/user-attachments/assets/0ed6da31-ed6a-43b1-b962-666f3d42ed19" />
+
 
 
 ### 4. Protect and optimise the database
@@ -181,10 +185,12 @@ The project uses synthetic data created for educational and portfolio purposes. 
 - Used `ANALYZE` to update PostgreSQL query-planner statistics.
 - Avoided unnecessary indexes on low-cardinality fields.
 
-![alt text](image-3.png)
+<img width="822" height="415" alt="image" src="https://github.com/user-attachments/assets/98c759d0-6c2c-49f7-babb-0e3b7bb81537" />
 
 
-![alt text](image-4.png)
+
+<img width="1039" height="582" alt="image" src="https://github.com/user-attachments/assets/09a1749f-3bc5-43c5-b219-0c4c3290a09f" />
+
 
 
 ### 5. Validate the clean model
@@ -193,13 +199,14 @@ The project uses synthetic data created for educational and portfolio purposes. 
 - Checked that healthcare activity did not occur before a valid birth date.
 - Confirmed that analytical joins did not multiply fact-table rows.
 - Measured candidate, eligible and excluded records for important KPIs.
-![alt text](image-5.png)
 
-![alt text](image-7.png)
+<img width="831" height="121" alt="image" src="https://github.com/user-attachments/assets/d5ea5e93-abde-4273-99fb-e414cf42ca38" />
 
-![alt text](image-8.png)
+<img width="823" height="159" alt="image" src="https://github.com/user-attachments/assets/ea368e37-e794-4ebe-bbd3-ce21c2bdb022" />
 
-![alt text](image-9.png)
+<img width="826" height="166" alt="image" src="https://github.com/user-attachments/assets/1aa1fee7-ef8c-4ce2-a32c-4b30cd80220e" />
+
+<img width="826" height="184" alt="image" src="https://github.com/user-attachments/assets/8cf8bad3-ae2d-4d26-9916-287bd08fb7e7" />
 
 
 ### 6. Build the analytical layer
@@ -208,11 +215,11 @@ The project uses synthetic data created for educational and portfolio purposes. 
 - Added reusable flags, dates, waiting-time calculations and descriptive fields.
 - Kept final aggregations and rankings in the business-analysis file.
 
-![alt text](image-10.png)
+<img width="1645" height="870" alt="image" src="https://github.com/user-attachments/assets/0972b645-5521-435b-8964-a46d66f53cf9" />
 
-![alt text](image-11.png)
+<img width="1639" height="882" alt="image" src="https://github.com/user-attachments/assets/b3b61bda-bdf8-47f4-9703-bc0059cc3b07" />
 
-![alt text](image-12.png)
+<img width="1641" height="880" alt="image" src="https://github.com/user-attachments/assets/655e40c2-c9a3-4d98-95c1-1e423f62dcb4" />
 
 
 ### 7. Build Power BI
@@ -222,7 +229,10 @@ The project uses synthetic data created for educational and portfolio purposes. 
 - Built base counts before percentage and average measures.
 - Reconciled unfiltered Power BI measures with independently checked SQL totals.
 
-> Dashboard Link
+<img width="602" height="371" alt="image" src="https://github.com/user-attachments/assets/e494c55d-3180-454f-918c-ed591770f334" />
+
+<img width="621" height="374" alt="image" src="https://github.com/user-attachments/assets/6ee869e5-3d4e-4210-b599-1d9defa5ee74" />
+
 ---
 
 ## Data quality approach
@@ -294,13 +304,11 @@ Reusable joins and derived fields are created in `01_create_analytics_views.sql`
 | Left before treatment | Visits with the agreed left-before-treatment disposition | Reported as a count or separately defined rate |
 | Seven-day ED return | Arrival within seven days of the patient's previous valid ED discharge | Measures repeat ED use, not hospital readmission |
 
-SQL percentages are reported from `0` to `100`. Equivalent Power BI rate measures return a decimal from `0` to `1` and are formatted as percentages.
 
 ---
 
-## Selected findings
+## Findings
 
-Because the dataset is synthetic, these findings demonstrate analytical interpretation rather than real healthcare performance.
 
 | Finding | Evidence | Business interpretation |
 |---|---|---|
@@ -329,6 +337,10 @@ The report is organised into two decision-focused pages.
 - Appointment-performance comparison.
 - Region, facility and department performance matrix.
 
+<img width="602" height="371" alt="image" src="https://github.com/user-attachments/assets/e494c55d-3180-454f-918c-ed591770f334" />
+
+
+
 ### Page 2: Emergency-department flow
 
 - Date, region and facility slicers.
@@ -337,6 +349,8 @@ The report is organised into two decision-focused pages.
 - Facility-level ED performance comparison.
 - Disposition and presenting-group composition.
 - Seven-day repeat-visit analysis.
+
+<img width="621" height="374" alt="image" src="https://github.com/user-attachments/assets/6ee869e5-3d4e-4210-b599-1d9defa5ee74" />
 
 ### Semantic model
 
@@ -388,31 +402,41 @@ A known flagged limitation is not automatically a validation failure. A failure 
 
 ### SQL execution order
 
+## SQL Execution Order
+
+## SQL Execution Order
+
+
 1. Create the database schemas and raw tables.
 2. Load the synthetic CSV files into the `raw` schema.
-3. Run the profiling files:
-   - `01_profile_identifiers.sql`
-   - `02_profile_values_and_ranges.sql`
-   - `03_profile_relationships_and_timelines.sql`
-4. Run the mapping and cleaning files:
-   - `01_create_reference_mappings.sql`
-   - `02_clean_facilities.sql`
-   - `03_clean_departments.sql`
-   - `04_clean_patients.sql`
-   - `05_clean_referrals.sql`
-   - `06_clean_appointments.sql`
-   - `07_clean_ed_visits.sql`
-5. Protect and validate the clean model:
-   - `01_add_constraints.sql`
-   - `02_create_indexes.sql`
-   - `03_validate_clean_data.sql`
-6. Build and query the analytical layer:
-   - `01_create_analytics_views.sql`
-   - `02_business_analysis.sql`
-7. Open `Healthcare_Access_Dashboard.pbix`, update the PostgreSQL connection and refresh the model.
-8. Confirm that the unfiltered Power BI measures match the validated SQL totals.
+3. Run the SQL scripts in the following order.
 
-Database passwords, cloud credentials and other secrets must never be committed to the repository.
+1. **Profile the raw data**
+
+   - [`01_profile_identifiers.sql`](./Healthcare_portfolio_project/SQL/01_profiling/01_profile_identifiers.sql)
+   - [`02_profile_values_and_ranges.sql`](./Healthcare_portfolio_project/SQL/01_profiling/02_profile_values_and_ranges.sql)
+   - [`03_profile_relationships_and_timelines.sql`](./Healthcare_portfolio_project/SQL/01_profiling/03_profile_relationships_and_timelines.sql)
+
+2. **Create reference mappings and clean the data**
+
+   - [`01_create_reference_mappings.sql`](./Healthcare_portfolio_project/SQL/02_cleaning/01_create_reference_mappings.sql)
+   - [`02_clean_facilities.sql`](./Healthcare_portfolio_project/SQL/02_cleaning/02_clean_facilities.sql)
+   - [`03_clean_departments.sql`](./Healthcare_portfolio_project/SQL/02_cleaning/03_clean_departments.sql)
+   - [`04_clean_patients.sql`](./Healthcare_portfolio_project/SQL/02_cleaning/04_clean_patients.sql)
+   - [`05_clean_referrals.sql`](./Healthcare_portfolio_project/SQL/02_cleaning/05_clean_referrals.sql)
+   - [`06_clean_appointments.sql`](./Healthcare_portfolio_project/SQL/02_cleaning/06_clean_appointments.sql)
+   - [`07_clean_ed_visits.sql`](./Healthcare_portfolio_project/SQL/02_cleaning/07_clean_ed_visits.sql)
+
+3. **Protect and validate the clean data model**
+
+   - [`01_add_constraints.sql`](./Healthcare_portfolio_project/SQL/03_validation/01_add_constraints.sql)
+   - [`02_create_indexes.sql`](./Healthcare_portfolio_project/SQL/03_validation/02_create_indexes.sql)
+   - [`03_validate_clean_data.sql`](./Healthcare_portfolio_project/SQL/03_validation/03_validate_clean_data.sql)
+
+4. **Build and query the analytical layer**
+
+   - [`01_create_analytics_views.sql`](./Healthcare_portfolio_project/SQL/04_analytics/01_create_analytics_views.sql)
+   - [`02_business_analysis.sql`](./Healthcare_portfolio_project/SQL/04_analytics/02_business_analysis.sql)
 
 ---
 
@@ -435,8 +459,6 @@ Database passwords, cloud credentials and other secrets must never be committed 
 - Add automated regression checks for critical row counts and measures.
 - Add one `EXPLAIN ANALYZE` example demonstrating index impact.
 - Optionally deploy PostgreSQL to Amazon RDS and source files to a private S3 bucket after the local workflow is fully validated.
-
-Cloud services or advanced tools should be added only when they solve a defined project requirement.
 
 ---
 
