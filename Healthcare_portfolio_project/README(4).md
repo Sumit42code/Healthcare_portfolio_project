@@ -75,7 +75,7 @@ The analysis combines referral, appointment and emergency-department activity so
 
 ## Project architecture
 
-![Healthcare analytics data pipeline](Healthcare_Analytics_Pipeline.png)
+
 
 The database uses three schemas with separate responsibilities:
 
