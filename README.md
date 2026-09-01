@@ -473,8 +473,7 @@ Cloud services or advanced tools should be added only when they solve a defined 
 
 ## Insights
 
-
-Click Here:
+[Click Here for Insights](Insights.md)
 ---
 
 ## Author
