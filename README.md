@@ -23,13 +23,12 @@
 - [Data quality approach](#data-quality-approach)
 - [Database and analytics design](#database-and-analytics-design)
 - [KPI definitions](#kpi-definitions)
-- [Selected findings](#selected-findings)
 - [Power BI dashboard](#power-bi-dashboard)
 - [Validation](#validation)
 - [Running the project](#running-the-project)
 - [Limitations and future improvements](#limitations-and-future-improvements)
 - [Skills demonstrated](#skills-demonstrated)
-- [Insights](#Insights)
+- [Insights](#insights)
 
 ---
 
@@ -400,10 +399,6 @@ A known flagged limitation is not automatically a validation failure. A failure 
 - Power BI Desktop.
 - Permission to create a PostgreSQL database and schemas.
 
-### SQL execution order
-
-## SQL Execution Order
-
 ## SQL Execution Order
 
 
@@ -495,7 +490,7 @@ A known flagged limitation is not automatically a validation failure. A failure 
 
 ## Insights
 
-[Click Here for Insights](Insights.md)
+[Click Here for Insights](insights.md)
 ---
 
 ## Author
